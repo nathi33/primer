@@ -26,6 +26,8 @@
       padding-top: 40px;
       padding-bottom: 40px;
       background-color: #f5f5f5;
+      background-repeat: no-repeat;
+      background-size:cover;
     }
     .signin {
       width: 100%;
@@ -33,12 +35,13 @@
       padding: 15px;
       margin:unset;
     }
-
+.forgot-password{
+  color: rgb(0, 0, 0);
+}
     .profile-img {
         border-radius: 3px;
         text-align: center;
-        width: 450px;
-        height: 180px;;
+        width: 420px;
         border: 3px solid rgb(176, 207, 236)
     }
    .form-signin {
@@ -50,7 +53,7 @@
 </style>
 </head>
 
-<body class="text-center">
+<body class="text-center" background="img/ecommerce-law.jpg_524172160.jpg">
   <div class="container p-5">
     <img id="profile-img" class="profile-img" src="img\login.png" />
     <p id="profile-name" class="profile-name-card"></p>
@@ -63,7 +66,7 @@
       <br>
       <div id="remember" class="checkbox">
             <label>
-                <input type="checkbox" value="remember-me"> Recordarme
+                <input type="checkbox" value="remember-me"> <b>Recuérdame</b>
             </label>
         </div>
         <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Iniciar sesión</button>
