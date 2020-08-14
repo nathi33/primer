@@ -14,7 +14,8 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <style>
-    html, body{
+    html,
+    body {
       height: 100%;
     }
 
@@ -27,57 +28,70 @@
       padding-bottom: 40px;
       background-color: #f5f5f5;
       background-repeat: no-repeat;
-      background-size:cover;
+      background-size: cover;
     }
+
     .signin {
       width: 100%;
       max-width: 330px;
       padding: 15px;
-      margin:unset;
+      margin: unset;
     }
-.forgot-password{
-  color: rgb(0, 0, 0);
-}
+
+    .forgot-password {
+      color: rgb(0, 0, 0);
+    }
+
     .profile-img {
-        border-radius: 3px;
-        text-align: center;
-        width: 420px;
-        border: 3px solid rgb(176, 207, 236)
+      border-radius: 3px;
+      text-align: center;
+      width: 420px;
+      border: 3px solid rgb(176, 207, 236)
     }
-   .form-signin {
-    margin: 2px auto;
-    align-content: center;
-    border-radius: 10px;
-    width: 500px;
-}
-</style>
+
+    .form-signin {
+      margin: 2px auto;
+      align-content: center;
+      border-radius: 10px;
+      width: 500px;
+      background-color: rgba(255, 255, 255, 0.6);
+      border: 8px thin rgba(255, 255, 255, 0.6)
+    }
+    
+    
+
+  </style>
 </head>
 
 <body class="text-center" background="img/ecommerce-law.jpg_524172160.jpg">
+  
   <div class="container p-5">
     <img id="profile-img" class="profile-img" src="img\login.png" />
     <p id="profile-name" class="profile-name-card"></p>
     <br>
-      <h4 ><b>e-Mercado te da la bienvenida</b></h4>
-      <form class="form-signin" action="home.html">
-        <span id="reauth-email" class="reauth-email"></span>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+    
+    
+    <form class="form-signin" action="home.html">
+      <h4><b>e-Mercado te da la bienvenida</b></h4>
+      <span id="reauth-email" class="reauth-email"></span>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
       <br>
       <div id="remember" class="checkbox">
-            <label>
-                <input type="checkbox" value="remember-me"> <b>Recuérdame</b>
-            </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Iniciar sesión</button>
+        <label>
+          <input type="checkbox" value="remember-me"> <b>Recuérdame</b>
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Iniciar sesión</button>
     </form>
     <br>
     <a href="https://www.youtube.com/watch?v=wZgIKbVWoQI" class="forgot-password">
-        Olvide mi contraseña
+      Olvide mi contraseña
     </a>
   </div>
 
   <script src="js/init.js"></script>
   <script src="js/login.js"></script>
 </body>
+
 </html>
